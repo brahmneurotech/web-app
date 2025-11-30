@@ -514,7 +514,7 @@ const SubscribeButton: React.FC<{
         animate={{ opacity: 1, scale: 1 }}
         className="w-full h-full flex items-center justify-center text-white font-sans font-normal text-lg text-center bg-[#4B9CD3] rounded-full"
       >
-        Subscribed!
+        Thanks for subscribing!
       </motion.div>
     );
   }
