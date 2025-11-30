@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brahm Neurotech | Coming Soon</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Noto Sans"', "sans-serif"],
+              logo: ['"Outfit"', "sans-serif"],
+            },
+            colors: {
+              background: "#ffffff",
+              surface: "#f9fafb",
+              primary: "#151515",     // PMS Black 3
+              secondary: "#13294B",   // Navy
+              accent: "#4B9CD3",      // Carolina Blue
+              border: "#e5e5e5",
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              "float-delayed": "float 6s ease-in-out 3s infinite",
+              "float-slow": "float 8s ease-in-out infinite",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-20px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+      body {
+        background-color: #ffffff;
+        color: #151515;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+
+      /* Background grid */
+      .bg-grid {
+        background-size: 25vw 25vw;
+        background-image:
+          linear-gradient(to right, #f3f4f6 1px, transparent 1px),
+          linear-gradient(to bottom, #f3f4f6 1px, transparent 1px);
+      }
+
+      /* Sphere gradient (volumetric bubble) */
+      .sphere-gradient {
+        background: radial-gradient(
+          120% 120% at 30% 30%,
+          rgba(255, 255, 255, 0.95) 0%,
+          rgba(255, 255, 255, 0.1) 20%,
+          rgba(75, 156, 211, 0.12) 45%,
+          rgba(75, 156, 211, 0.35) 70%,
+          rgba(75, 156, 211, 0.5) 100%
+        );
+
+        box-shadow:
+          inset 4px 4px 12px rgba(255, 255, 255, 0.8),
+          inset -10px -10px 20px rgba(75, 156, 211, 0.45),
+          inset -2px -2px 6px rgba(19, 41, 75, 0.1),
+          0px 15px 35px rgba(75, 156, 211, 0.25);
+        
+        backdrop-filter: blur(3px);
+        border: none;
+      }
+    </style>
+
+    <!-- Import Maps for React & Framer Motion -->
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "matter-js": "https://aistudiocdn.com/matter-js@^0.20.0"
+  }
+}
+</script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
